@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation = "vertical">
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/paidby" android:text = "Paid By">
+	</Button>
+	<EditText android:layout_width="fill_parent" android:hint = "Amount"
+		android:layout_height="wrap_content" android:id="@+id/paidamount">
+	</EditText>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/paidto" android:text = "Paid To">
+	</Button>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/cleardues" android:text = "Clear Dues">
+	</Button>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/donedues" android:text = "Done">
+	</Button>
+</LinearLayout>

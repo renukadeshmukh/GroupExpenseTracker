@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ScrollView android:layout_width="fill_parent" android:id="@+id/main"
+		android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+			<EditText android:layout_width="fill_parent" android:id="@+id/groupname"
+				android:layout_height="wrap_content" android:hint="Group Name"></EditText>
+			<DatePicker android:layout_width="fill_parent" android:id="@+id/datepicker"
+				android:layout_height="wrap_content"></DatePicker>
+			<Spinner android:layout_width="fill_parent" android:id="@+id/currency"
+				android:layout_height="wrap_content" android:prompt="@string/prompt"></Spinner>
+			<TextView android:layout_width="fill_parent" android:id="@+id/add"
+				android:text="Add Members From" android:layout_height="wrap_content"></TextView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<Button android:layout_width="wrap_content" android:id="@+id/fbadd"
+					android:text="Facebook" android:layout_height="wrap_content"
+					android:layout_weight="0.33"></Button>
+				<Button android:layout_width="wrap_content" android:id="@+id/contactadd"
+					android:text="PhoneBook" android:layout_height="wrap_content"
+					android:layout_weight="0.33"></Button>
+				<Button android:layout_width="wrap_content" android:id="@+id/eventadd"
+					android:text="Event" android:layout_height="wrap_content"
+					android:layout_weight="0.33"></Button>
+			</LinearLayout>
+			<Button android:layout_width="fill_parent" android:id="@+id/done"
+				android:text="Done" android:layout_height="wrap_content"></Button>
+			<Button android:layout_width="fill_parent" android:id="@+id/backtomain"
+				android:text="Cancel" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	</ScrollView>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:id="@+id/listcontainer"
+		android:visibility="invisible">
+		<ListView android:layout_width="fill_parent" android:id="@+id/eventlist"
+			android:layout_above="@+id/footer" android:layout_alignParentTop="true"
+			android:layout_height="fill_parent">
+		</ListView>
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/footer" android:layout_alignParentBottom="true"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<Button android:layout_width="wrap_content" android:id="@+id/admembers"
+				android:text="Add" android:layout_height="wrap_content"
+				android:layout_weight="0.5"></Button>
+			<Button android:layout_width="wrap_content" android:id="@+id/cancel"
+				android:text="Cancel" android:layout_height="wrap_content"
+				android:layout_weight="0.5"></Button>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

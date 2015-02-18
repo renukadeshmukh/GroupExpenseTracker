@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:id="@+id/home" android:text="Home"
+			android:layout_width="wrap_content" android:padding="0dip"
+			android:layout_height="wrap_content" android:layout_weight="0.5"></Button>
+		<Button android:id="@+id/group" android:text="Group"
+			android:padding="0dip" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="0.5"></Button>
+	
+</LinearLayout>
+	<Button android:text="My Dues" android:id="@+id/mydues"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="vertical" android:layout_height="wrap_content"
+			android:id="@+id/homecontainer">
+			<Button android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/creategroup"
+				android:text="Create Group"></Button>
+			<ListView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/homereport">
+			</ListView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/groupcontainer">
+			<ListView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/grouplist">
+			</ListView>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

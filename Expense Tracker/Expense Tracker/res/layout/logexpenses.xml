@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation = "vertical">
+	<EditText android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/expname" android:hint = "Expense Name">
+	</EditText>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/payee" android:text = "Payee">
+	</Button>
+	<EditText android:layout_width="fill_parent" android:hint = "Amount"
+		android:layout_height="wrap_content" android:id="@+id/amount">
+	</EditText>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/paidfor" android:text = "Paid For">
+	</Button>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/saveexpense" android:text = "Save">
+	</Button>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/doneexpense" android:text = "Done">
+	</Button>
+</LinearLayout>
